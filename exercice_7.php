@@ -16,11 +16,14 @@ and open the template in the editor.
             <p>En allant de 1 à 100 avec un pas de 15, afficher le message On tient le bon bout.</p>
         </div>
         <div>
-            <p><?php
-                for ($i=1; $i<=100; $i += 15) {
-                    echo $i . ' - On tient le bon bout<br />';
-                }
-            ?></p>
+
+            <?php
+            for ($i = 1; $i <= 100; $i += 15) {
+            ?>
+                <p><?= $i; ?> - On tient le bon bout</p>
+            <?php
+            }
+            ?>
         </div>
     </body>
 </html>

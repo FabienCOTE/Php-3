@@ -16,11 +16,13 @@ and open the template in the editor.
             <p>En allant de 200 à 0 avec un pas de 12, afficher le message Enfin !!!!.</p>
         </div>
         <div>
-            <p><?php
-                for ($i=200; $i>=0; $i -= 12) {
-                    echo $i . ' - Enfin !!!<br />';
-                }
-            ?></p>
+            <?php
+            for ($i = 200; $i >= 0; $i -= 12) {
+            ?>
+            <p><?= $i; ?> - Enfin !!!</p>
+            <?php
+            }
+            ?>
         </div>
     </body>
 </html>

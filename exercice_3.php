@@ -16,15 +16,15 @@ and open the template in the editor.
             <p>Créer deux variables. Initialiser la première à 100 et la deuxième avec un nombre compris en 1 et 100.<br />Tant que la première variable n'est pas inférieure à 10 :<br />multiplier la première variable avec la deuxième<br />afficher le résultat<br />décrémenter la première variable</p>
         </div>
         <div>
-            <p><?php
-                $number = 100;
-                $rand = rand(1, 100);
-                while ($number >= 10) {
-                    $multiply = $number * $rand;
-                    echo $multiply . '<br />';
-                    $number--;
-                }
-            ?></p>
+            <?php
+            $number = 100;
+            $rand = rand(1, 100);
+            while ($number >= 10) {
+            ?>
+            <p><?= $number * $rand; $number--; ?></p>
+            <?php
+            }
+            ?>
         </div>
     </body>
 </html>

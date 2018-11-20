@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8" />
         <title>Exercice 5</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div>
@@ -16,11 +16,13 @@ and open the template in the editor.
             <p>En allant de 1 à 15 avec un pas de 1, afficher le message On y arrive presque.</p>
         </div>
         <div>
-            <p><?php
-                for ($i=1; $i<=15; $i++) {
-                    echo $i . ' - On y arrive presque<br />';
-                }
-            ?></p>
+            <?php
+            for ($i = 1; $i <= 15; $i++) {
+            ?>
+            <p><?= $i; ?> - On y arrive presque</p>
+            <?php
+            }
+            ?>
         </div>
     </body>
 </html>

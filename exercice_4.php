@@ -16,13 +16,14 @@ and open the template in the editor.
             <p>Créer une variable et l'initialiser à 1.<br />Tant que cette variable n'atteint pas 10, il faut :<br />l'afficher<br />l'incrementer de la moitié de sa valeur</p>
         </div>
         <div>
-            <p><?php
-                $number = 1;
-                while ($number < 10) {
-                    echo $number . '<br />';
-                    $number *= 1.5;
-                }
-            ?></p>
+            <?php
+            $number = 1;
+            while ($number <= 10) {
+            ?>
+            <p><?= $number; $number *= 1.5; ?></p>
+            <?php
+            }
+            ?>
         </div>
     </body>
 </html>
