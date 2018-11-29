@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
@@ -16,13 +11,9 @@ and open the template in the editor.
             <p>En allant de 20 à 0 avec un pas de 1, afficher le message C'est presque bon.</p>
         </div>
         <div>
-            <?php
-            for ($i = 20; $i >= 0; $i--) {
-            ?>
+            <?php for ($i = 20; $i >= 0; $i--) { ?>
             <p><?= $i; ?> C'est presque bon</p>
-            <?php
-            }
-            ?>
+            <?php } ?>
         </div>
     </body>
 </html>

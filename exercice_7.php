@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
@@ -17,13 +12,9 @@ and open the template in the editor.
         </div>
         <div>
 
-            <?php
-            for ($i = 1; $i <= 100; $i += 15) {
-            ?>
+            <?php for ($i = 1; $i <= 100; $i += 15) { ?>
                 <p><?= $i; ?> - On tient le bon bout</p>
-            <?php
-            }
-            ?>
+            <?php } ?>
         </div>
     </body>
 </html>

@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <?php
 $number = 0;
 ?>
@@ -19,9 +14,9 @@ $number = 0;
             <p>Créer une variable et l'initialiser à 0.<br />Tant que cette variable n'atteint pas 10, il faut :<br />l'afficher<br />l'incrementer</p>
         </div>
         <div>
-<?php while ($number <= 10) { ?>
+        <?php while ($number <= 10) { ?>
             <p><?= $number; $number++; ?></p>
-<?php } ?>
+        <?php } ?>
         </div>
     </body>
 </html>
